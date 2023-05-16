@@ -10,7 +10,7 @@ import numpy as np
 # price and change --> <div class="D(ib) Mend(20px)"><fin-streamer class="Fw(b) Fz(36px) Mb(-4px) D(ib)" data-symbol="AAPL" data-test="qsp-price" data-field="regularMarketPrice" data-trend="none" data-pricehint="2" value="160.1" active="">160.10</fin-streamer><fin-streamer class="Fw(500) Pstart(8px) Fz(24px)" data-symbol="AAPL" data-test="qsp-price-change" data-field="regularMarketChange" data-trend="txt" data-pricehint="2" value="-0.69999695" active=""><span class="C($negativeColor)">-0.70</span></fin-streamer> <fin-streamer class="Fw(500) Pstart(8px) Fz(24px)" data-symbol="AAPL" data-field="regularMarketChangePercent" data-trend="txt" data-pricehint="2" data-template="({fmt})" value="-0.004353215" active=""><span class="C($negativeColor)">(-0.44%)</span></fin-streamer><fin-streamer class="D(n)" data-symbol="AAPL" changeev="regularTimeChange" data-field="regularMarketTime" data-trend="none" value="" active="true"></fin-streamer><fin-streamer class="D(n)" data-symbol="AAPL" changeev="marketState" data-field="marketState" data-trend="none" value="" active="true"><span class="e3b14781">PRE</span></fin-streamer><div id="quote-market-notice" class="C($tertiaryColor) D(b) Fz(12px) Fw(n) Mstart(0)--mobpsm Mt(6px)--mobpsm Whs(n)"><span>At close:  04:00PM EDT</span></div></div>
 
 
-def stock_table_data():
+def stockdata():
     # Stocklist = ['TSLA','AAPL','BAC','MARA','AMZN','NVDA','NIO','RIOT','GOOGL','INFY','PLUG','APE','SOFI','META','MSFT','SNAP','USB','NYCB','DNA','UBER','AFRM','PYPL','PARA','MS','DELL','HPQ','HPE','DIS']
     Stocklist = ['TSLA','AAPL','BAC']
     
@@ -136,6 +136,5 @@ def stock_table_data():
     return (DataMatrix,tablehead)
 
 # Stocklist = ['AAPL','MSFT','META']
-stock_table_data()
-# ans = stockdata(Stocklist)
+# ans = stockdata()
 # print(ans)

@@ -51,8 +51,18 @@
 *::after {
   box-sizing: border-box;
 }
+
+/* home.css */
+
+/* .dd1{
+  background-color: #000;
+} */
+
+/* end */
+
+
 .cloud{
-background-image: url("static\imgs\cloud.jpg");
+/* background-image: url("../imgs/header.jpg"); */
 background-size: cover;
 background-position: center;
 }
@@ -12074,13 +12084,13 @@ pre .code {
   color: #6c757d;
 }
 
+
 .footer .social-links a:hover {
   background: #695aa6;
   border-color: #695aa6;
   color: #fff;
   text-decoration: none;
 }
-
 @media (max-width: 767.98px) {
   .footer {
     padding: 15px 0;
@@ -12111,7 +12121,7 @@ pre .code {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-          background-image: url("\\static\\imgs\\cloud.jpg");
+          /* background-image: url("../imgs/header.jpg"); */
           background-size: cover;
           background-position: center;
          

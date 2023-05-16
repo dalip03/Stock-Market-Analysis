@@ -1,10 +1,11 @@
 # importing the libraries
 from flask import Flask,render_template,request
 from Scraping import stockdata
-from TableData import stock_table_data
+from tableStocks import tabledata
 import pandas as pd
+from TopLoserStocks import topLoseData
 import numpy as np
-
+from News_yahooStocks import yahooNews
 
 #Global variables
 
@@ -18,27 +19,17 @@ app=Flask(__name__)
 @app.route("/", methods=["GET" ,"POST" ])
 def home1():   
     
-    context,tablehead =  stock_table_data()
-    return render_template('base.html',context=context,tablehead = tablehead)
+    gain, lose ,gainlosehead =  topLoseData()
+    news = yahooNews()
+    return render_template('indexjs.html',gain=gain, lose= lose ,gainlosehead = gainlosehead, news = news)
 
+@app.route("/table", methods=["GET" ,"POST" ])
+def home2():   
+    context,tablehead =  tabledata()
+    return render_template('table.html',context=context,tablehead = tablehead)
 
-
-@app.route("/index",methods=['GET','POST'])
-def home():
-    global code 
-    if request.method == "POST":
-        code =request.form['code']
-     
-        if code is None or code == "":
-            code = ['AAPL']
-
-    temp =[code]
-    # temp = ['AAPL','META']
-    context,tablehead = stockdata(temp)
-
-    return render_template('index1.html',context=context,tablehead = tablehead)
    
-   
+    
 # @app.route("/prediction",methods=['GET','POST'])
 # def predict():
 #     output = pre(list(df['text']))
@@ -49,6 +40,6 @@ def home():
 
 
 if __name__ =='__main__':
-    app.run(debug=True)       
+    app.run(debug=True      )       
 
 
