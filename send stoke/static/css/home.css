@@ -1,5 +1,8 @@
-.dd1{
+/* .dd1{
     overflow-x: hidden;
+} */
+.cloud{
+    /* background-color: antiquewhite; */
 }
 .dd1 p{
     color: rgba(0, 0, 0, 0.395);
@@ -12,16 +15,12 @@
 }
 .stocks3{
     position: absolute;
-    margin-top: -530px;
-    margin-left: 12px;
+    margin-top: -330px;
+    margin-left: 15px;
     height: 200px;
-    /* border: 1px solid black; */
+    /* border: 1px solid rgb(222, 71, 71); */
 }
-/* .boughth{
-    position: absolute;
-    margin-top: -350px;
-    
-} */
+
 .dd1 h4{
     color: rgba(0, 0, 0, 0.685);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -29,8 +28,9 @@
 }
 .dvv1{
     display: flex;
-    border: 1px solid black;
-    height: 800px;
+    border: 1px solid rgb(8, 1, 1);
+    height: 650px;
+    overflow-y: hidden;
 }
 .dvv1 h4{
     margin-top: 20px;
@@ -38,9 +38,9 @@
 }
 .stocks2{
     /* border: 1px solid rgba(0, 0, 0, 0.297); */
-    height: 450px;
+    height: 800px;
     position: absolute;
-    border-left: 1px solid black;
+    border-left: 1px solid rgb(19, 3, 3);
 }
 .tabled{
     margin-top: 20px;

@@ -1,0 +1,48 @@
+.bg{
+    /* background-image: url(../imgs/cloud.jpg); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+/* navbar */
+.navbar{
+border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+position: sticky;
+top: 0;
+}
+
+/* end navbar */
+
+
+.bg2{
+    border-left: 1px solid rgba(0, 0, 0, 0.094);
+    border-right: 1px solid rgba(0, 0, 0, 0.094);
+    height: 100vh;
+}
+
+.top-gainers{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.317);
+}
+.h11{
+    color: rgba(2, 17, 12, 0.379);
+}
+.box{
+    display: flex;
+}
+
+.top-losers{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.317);
+    /* box-shadow: 10px 10px solid black; */
+
+}
+.top-news{
+    margin-top: 20px;
+}
+.dalip{
+    font-size: 14px;
+}
+.news{
+    border: 1px solid rgba(0, 0, 0, 0.105);
+}
